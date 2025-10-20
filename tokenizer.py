@@ -55,7 +55,6 @@ def decode_token(tkn,merges,memo):
 def encode(text,merges):
     merges_token_to_pair = {pair: id for id, pair in merges.items()}
     tokens = list(text.encode('utf-8'))
-    encoded_list = []
     while True:
         counts = count_pairs(tokens)
         pair = min(counts,key=lambda p: merges_token_to_pair.get(p,float('inf')))
