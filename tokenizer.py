@@ -81,4 +81,4 @@ if __name__ == "__main__":
     e = encode(text,merges)
     print(f"Encoded: {e} ({len(e)})")
     d = decode(e,merges)
-    print(f"Decoded: {d} ({len(d)})")
+    print(f"Decoded: {"".join(d)} ({len(d)})")
