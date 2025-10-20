@@ -1,1 +1,1 @@
-Naive BPE implementation
+BPE implementation
